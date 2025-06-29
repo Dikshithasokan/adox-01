@@ -26,7 +26,7 @@ export default function Blog() {
       {/* Header (uses site nav) */}
       <section className="hero" style={{ textAlign: 'center', padding: '80px 0 40px 0', color: 'white' }}>
         <h1 style={{ fontSize: 48, fontWeight: 800, marginBottom: 20, textShadow: '2px 2px 4px rgba(0,0,0,0.3)' }}>
-          AI & Robotics Insights
+          AI &amp; Robotics Insights
         </h1>
         <p style={{ fontSize: 20, opacity: 0.9, maxWidth: 600, margin: '0 auto' }}>
           Exploring the cutting-edge world of artificial intelligence and robotics technology
@@ -36,7 +36,7 @@ export default function Blog() {
       {/* Quote Section */}
       <section className="quote-section scroll-reveal" style={{ background: 'rgba(255,255,255,0.1)', backdropFilter: 'blur(20px)', borderRadius: 20, padding: 40, margin: '60px auto', textAlign: 'center', border: '1px solid rgba(255,255,255,0.2)', maxWidth: 900 }}>
         <p className="quote-text" style={{ fontSize: 24, fontStyle: 'italic', color: 'white', marginBottom: 20, lineHeight: 1.4 }}>
-          "The future belongs to those who understand that AI and robotics are not just technologies, but partners in human advancement."
+          &quot;The future belongs to those who understand that AI and robotics are not just technologies, but partners in human advancement.&quot;
         </p>
         <p className="quote-author" style={{ color: 'rgba(255,255,255,0.8)', fontWeight: 600 }}>
           - ABOX Technologies Innovation Team
@@ -64,7 +64,7 @@ export default function Blog() {
                 </p>
                 <div className="blog-text" style={blogTextStyle}>
                   <p>
-                    Large Language Models (LLMs) have evolved far beyond simple text generation. In 2025, we're witnessing unprecedented integration of these AI systems across industries, fundamentally changing how businesses operate, communicate, and innovate.
+                    Large Language Models (LLMs) have evolved far beyond simple text generation. In 2025, we&apos;re witnessing unprecedented integration of these AI systems across industries, fundamentally changing how businesses operate, communicate, and innovate.
                   </p>
                   <h3 style={blogH3Style}>🚀 Current Applications Revolutionizing Industries</h3>
                   <ul style={blogUlStyle}>
@@ -82,7 +82,7 @@ export default function Blog() {
                     Despite their promise, LLMs face significant challenges including bias mitigation, energy consumption, and the need for robust safety measures. Organizations must balance innovation with responsible AI deployment to ensure ethical and sustainable growth.
                   </p>
                   <p>
-                    At ABOX Technologies, we're pioneering solutions that harness LLM capabilities while addressing these critical challenges. Our research focuses on creating efficient, bias-free models that serve humanity's best interests.
+                    At ABOX Technologies, we&apos;re pioneering solutions that harness LLM capabilities while addressing these critical challenges. Our research focuses on creating efficient, bias-free models that serve humanity&apos;s best interests.
                   </p>
                 </div>
                 <a href="#" className="read-more" style={readMoreStyle}>
@@ -134,7 +134,7 @@ export default function Blog() {
                   </ul>
                   <h3 style={blogH3Style}>🤝 Human-Robot Collaboration</h3>
                   <p>
-                    The most significant breakthrough isn't just in robot capabilities, but in how they collaborate with humans. Advanced safety systems, including:
+                    The most significant breakthrough isn&apos;t just in robot capabilities, but in how they collaborate with humans. Advanced safety systems, including:
                   </p>
                   <ul style={blogUlStyle}>
                     <li>Proximity sensing to prevent accidents</li>
@@ -192,14 +192,14 @@ const blogCardStyle = {
   transition: 'all 0.4s ease',
   position: 'relative',
   animation: 'fadeInUp 0.8s ease',
-};
+} as React.CSSProperties;
 const blogHeaderStyle = {
   background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
   color: 'white',
   padding: 30,
   position: 'relative',
   overflow: 'hidden',
-};
+} as React.CSSProperties;
 const blogCategoryStyle = {
   background: 'rgba(255,255,255,0.2)',
   color: 'white',
@@ -211,45 +211,45 @@ const blogCategoryStyle = {
   letterSpacing: 1,
   display: 'inline-block',
   marginBottom: 15,
-};
+} as React.CSSProperties;
 const blogTitleStyle = {
   fontSize: 28,
   fontWeight: 700,
   marginBottom: 15,
   lineHeight: 1.3,
-};
+} as React.CSSProperties;
 const blogMetaStyle = {
   display: 'flex',
   alignItems: 'center',
   gap: 20,
   fontSize: 14,
   opacity: 0.8,
-};
+} as React.CSSProperties;
 const blogContentStyle = {
   padding: '40px 30px',
   color: '#333',
-};
+} as React.CSSProperties;
 const blogExcerptStyle = {
   fontSize: 16,
   color: '#666',
   marginBottom: 30,
   lineHeight: 1.7,
-};
+} as React.CSSProperties;
 const blogTextStyle = {
   fontSize: 15,
   lineHeight: 1.8,
   marginBottom: 25,
-};
+} as React.CSSProperties;
 const blogH3Style = {
   color: '#667eea',
   fontSize: 20,
   margin: '30px 0 15px 0',
   fontWeight: 600,
-};
+} as React.CSSProperties;
 const blogUlStyle = {
   margin: '15px 0',
   paddingLeft: 20,
-};
+} as React.CSSProperties;
 const readMoreStyle = {
   display: 'inline-flex',
   alignItems: 'center',
@@ -262,4 +262,4 @@ const readMoreStyle = {
   borderRadius: 25,
   transition: 'all 0.3s ease',
   marginTop: 20,
-}; 
+} as React.CSSProperties; 

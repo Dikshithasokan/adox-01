@@ -1,5 +1,4 @@
 "use client";
-import styles from "../page.module.css";
 import "./services.css";
 
 export default function Services() {

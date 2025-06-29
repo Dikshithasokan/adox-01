@@ -10,7 +10,7 @@ export default function About() {
 
       <div style={{ borderTop: '1px solid #ececf6', paddingTop: '32px', marginTop: '24px' }}>
         <p style={{ fontFamily: 'Segoe UI, Arial, sans-serif', fontSize: '17px', color: '#444', lineHeight: '1.8', marginBottom: '32px', textAlign: 'left' }}>
-          <b style={{ color: '#3a356e' }}>ABOX Technologies</b> is an IT Services Company that offers end to end UI Design, E-commerce & Open Source Development. We always look towards providing the best of the software solutions to the required business applications. Our founders have been significant players in the INDIA's web hosting and domain name registration market for over many years.
+          <b style={{ color: '#3a356e' }}>ABOX Technologies</b> is an IT Services Company that offers end to end UI Design, E-commerce &amp; Open Source Development. We always look towards providing the best of the software solutions to the required business applications. Our founders have been significant players in the INDIA&apos;s web hosting and domain name registration market for over many years.
         </p>
 
         <SectionDivider />
@@ -40,7 +40,7 @@ export default function About() {
           title="OUR JOURNEY"
           content={<>
             <p style={{ marginBottom: '16px' }}>
-              ABOX Technologies founders have been significant players in the INDIA's web hosting and domain name registration market for over many years. Initially they realised that though the internet was becoming increasingly popular, web hosting services were predominantly technical in nature, this meant that customers needed a good level of technical expertise to manage their accounts, often including UNIX skills, which came out with the launch of "ABOX Technologies".
+              ABOX Technologies founders have been significant players in the INDIA&apos;s web hosting and domain name registration market for over many years. Initially they realised that though the internet was becoming increasingly popular, web hosting services were predominantly technical in nature, this meant that customers needed a good level of technical expertise to manage their accounts, often including UNIX skills, which came out with the launch of &quot;ABOX Technologies&quot;.
             </p>
             <p style={{ marginBottom: '16px' }}>
               Our journey which has just been about half a decade, began as an entrepreneurial adventure, and today has mushroomed into a mature small scale entity delivering excellence in service to our small but ever growing clientele base.
@@ -68,7 +68,7 @@ export default function About() {
   );
 }
 
-function Section({ title, content }) {
+function Section({ title, content }: { title: string; content: string | React.ReactNode }) {
   return (
     <div style={{ margin: '36px 0' }}>
       <h2 style={{ fontFamily: "Georgia, 'Times New Roman', serif", fontSize: '24px', fontWeight: 600, color: '#483D8B', marginBottom: '14px', textAlign: 'left', letterSpacing: '0.5px' }}>{title}</h2>

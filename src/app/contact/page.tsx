@@ -25,12 +25,13 @@ export default function Contact() {
     "Digital Marketing"
   ];
 
-  function handleChange(e) {
-    const { name, value, type, checked } = e.target;
+  function handleChange(e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) {
+    const { name, value, type } = e.target;
+    const checked = e.target instanceof HTMLInputElement ? e.target.checked : false;
     setForm(f => ({ ...f, [name]: type === "checkbox" ? checked : value }));
   }
 
-  function handleSubmit(e) {
+  function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
     // You can add your form submission logic here
     alert("Thank you for contacting us!");
