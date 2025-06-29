@@ -1,0 +1,71 @@
+/* Card with border hover effect and white haze sweep */
+.hover-card {
+    width: 200px;
+    height: 140px;
+    background: white;
+    border: 1.5px solid #e0e0e0;
+    cursor: pointer;
+    transition: border-color 0.4s cubic-bezier(0.4,0,0.2,1), box-shadow 0.3s cubic-bezier(0.4,0,0.2,1), transform 0.3s cubic-bezier(0.4,0,0.2,1);
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    color: #333;
+    margin: 16px auto;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    padding: 16px 12px;
+    border-radius: 8px;
+}
+
+.hover-card:hover {
+    border-color: #ff4757;
+    box-shadow: 0 4px 16px rgba(255,71,87,0.08);
+    transform: translateY(-2px);
+}
+
+.hover-card:active .hover-card-content,
+.hover-card:hover .hover-card-content {
+    transform: scale(1.02);
+    transition: transform 0.2s cubic-bezier(0.4,0,0.2,1);
+}
+
+.hover-card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.2s cubic-bezier(0.4,0,0.2,1);
+    text-align: center;
+}
+
+.hover-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.6), transparent);
+    transition: right 0.5s ease;
+    pointer-events: none;
+    z-index: 2;
+}
+
+.hover-card:hover::before {
+    right: 100%;
+}
+
+/* Services grid layout */
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 16px;
+    padding: 12px;
+    max-width: 1000px;
+    margin: 0 auto;
+} 
